@@ -1,7 +1,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import TeamSection from '../components/TeamSection';
-
+import HireUsSection from '../components/HireUsSection';
 function Home() {
 
     const HeroSection = () => {
@@ -35,6 +35,8 @@ function Home() {
                 </button>
                 </div>
             </section>
+            
+            <HireUsSection />
             
             <TeamSection />
             </>

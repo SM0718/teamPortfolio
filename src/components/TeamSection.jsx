@@ -78,7 +78,7 @@ const TeamCard = ({ imgSrc, name, position, portfolioLink, github, linkedin, beh
 const TeamSection = () => {
   const teamMembers = [
     {
-      imgSrc: '/api/placeholder/400/320',
+      imgSrc: './sagnik.webp',
       name: 'Sagnik Majumder',
       position: 'Full Stack Web Developer',
       portfolioLink: 'https://portfolio1.com',

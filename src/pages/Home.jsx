@@ -15,7 +15,7 @@ function Home() {
         
                 {/* Content */}
                 <div className="relative z-10 max-w-2xl px-6">
-                <h1 className="text-3xl md:text-5xl font-bold text-white">We Develop Experiences </h1>
+                <h1 className="text-3xl md:text-5xl font-bold text-white">We Create Experiences </h1>
                 <p className="text-xl text-white mt-2"><TypeAnimation
                     sequence={[
                         'Web Development',
@@ -23,6 +23,8 @@ function Home() {
                         'UI/UX Design',
                         1000,
                         'Graphics Design',
+                        1000,
+                        'Digital Marketing',
                         1000,
                     ]}
                     wrapper="span"
@@ -37,7 +39,7 @@ function Home() {
             </section>
             
             <HireUsSection />
-            
+
             <TeamSection />
             </>
         );

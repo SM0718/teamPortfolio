@@ -86,7 +86,7 @@ const TeamSection = () => {
       linkedin: 'https://www.linkedin.com/in/sagnik-majumder-bbbb96200/'
     },
     {
-      imgSrc: '/api/placeholder/400/320',
+      imgSrc: './sara.webp',
       name: 'Sara Sharma',
       position: 'UI/UX Designer',
       portfolioLink: 'https://portfolio2.com',

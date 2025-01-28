@@ -40,9 +40,14 @@ const Header = () => {
 
         {/* Hire Us Button (Desktop) */}
         <div className="hidden md:block ml-auto">
-          <button className="bg-purple-500 cursor-pointer text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-600 transition-all duration-300">
-            Hire Us
-          </button>
+          {/* <div className="mt-10"> */}
+          <a
+            href="/contact"
+            className="inline-block rounded-full bg-black px-8 py-3 text-base font-medium text-white transition-transform hover:scale-105 hover:shadow-lg"
+          >
+            Hire us
+          </a>
+        {/* </div> */}
         </div>
 
         {/* Mobile Menu Toggle */}

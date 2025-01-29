@@ -117,9 +117,9 @@ const PortfolioPage = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
+            {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
             <div className="relative">
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h2 className="font-ulm text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 {names[position]}'s Portfolio
               </h2>
               <p className="mt-4 text-lg text-gray-300">
@@ -155,7 +155,7 @@ const PortfolioPage = () => {
                 <div className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                      <h3 className="font-ulm text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                         {item.name}
                       </h3>
                       <p className="mt-1 text-sm text-gray-400">{item.description}</p>

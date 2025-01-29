@@ -12,11 +12,11 @@ const TeamCard = ({ imgSrc, name, position, portfolioLink, github, linkedin, beh
         {/* Image Container with overlay */}
         <div className="relative mb-6 overflow-hidden rounded-xl">
           <img 
-            className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105" 
+            className="h-64 w-full grayscale object-cover transition-transform duration-300 group-hover:scale-105" 
             src={imgSrc} 
             alt={name}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" /> */}
         </div>
         
         {/* Content */}
@@ -118,7 +118,7 @@ const TeamSection = () => {
           <div className="relative">
             {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
             <div className="relative">
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h2 className="font-ulm text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Meet Our Team
               </h2>
               <p className="mt-4 text-lg text-gray-300">

@@ -32,7 +32,8 @@ const ServicesPage = () => {
         "Progressive Web Apps",
         "API Development"
       ],
-      color: "from-blue-400 to-cyan-400"
+      color: "from-blue-400 to-cyan-400",
+      slug: '/services/0'
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -44,7 +45,8 @@ const ServicesPage = () => {
         "Wireframing & Prototyping",
         "Design Systems"
       ],
-      color: "from-purple-400 to-pink-400"
+      color: "from-purple-400 to-pink-400",
+      slug: '/services/1'
     },
     {
         icon: <PenTool className="w-8 h-8" />,
@@ -56,7 +58,8 @@ const ServicesPage = () => {
           "Marketing Materials",
           "Print Design"
         ],
-        color: "from-orange-400 to-red-400"
+        color: "from-orange-400 to-red-400",
+        slug: '/services/3'
       },
     // {
     //   icon: <Globe className="w-8 h-8" />,
@@ -90,7 +93,7 @@ const ServicesPage = () => {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
+          <h1 className="font-ulm text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
             Our Services
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -122,8 +125,8 @@ const ServicesPage = () => {
                     ))}
                   </ul>
                   {/* <button > */}
-                    <NavLink to={`/portfolio/${index}`} className="mt-auto px-6 py-3 cursor-pointer rounded-xl bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 font-medium flex items-center justify-center space-x-2 group/btn hover:from-cyan-300 hover:to-purple-300 transition-all">
-                        <span>See portfolio</span>
+                    <NavLink to={service.slug} className="mt-auto px-6 py-3 cursor-pointer rounded-xl bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 font-medium flex items-center justify-center space-x-2 group/btn hover:from-cyan-300 hover:to-purple-300 transition-all">
+                        <span>See More</span>
                         <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </NavLink>
                   {/* </button> */}
@@ -137,7 +140,7 @@ const ServicesPage = () => {
       {/* Additional Features */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-32">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Why Choose Us
           </h2>
           <p className="mt-4 text-gray-300">

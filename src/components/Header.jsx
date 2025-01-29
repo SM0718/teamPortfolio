@@ -5,17 +5,18 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   return (
-    <div className="w-full bg-gray-900/80 backdrop-blur-md border-b border-gray-800 fixed top-0 z-50">
+    <div className="w-screen px-4 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-0 group-hover:opacity-50 transition duration-700"></div>
             <img
               onClick={() => navigate('/')}
-              className="relative w-[125px] cursor-pointer object-cover  group-hover:border-gray-600 transition-all duration-300"
+              className="relative w-[125px] cursor-pointer object-cover group-hover:border-gray-600 transition-all duration-300"
               src="/./agriLogo.png"
               alt="Logo"
             />
@@ -35,9 +36,14 @@ const Header = () => {
                 className={({ isActive }) =>
                   `relative text-lg font-medium transition-all duration-300 ${
                     isActive
-                      ? "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 after:bg-gradient-to-r after:from-cyan-400 after:to-purple-400 after:scale-100"
+                      ? "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400"
                       : "text-gray-400 hover:text-gray-200"
-                  } after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-full after:scale-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-100`
+                  } before:content-[''] before:absolute before:block before:w-full 
+                  before:h-[2px] before:bottom-[-4px] before:left-0 before:bg-gradient-to-r 
+                  before:from-cyan-400 before:to-purple-400 before:scale-x-0 
+                  before:origin-left hover:before:scale-x-100 before:transition-transform 
+                  before:duration-300 before:ease-in-out
+                  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-400`
                 }
               >
                 {label}
@@ -62,10 +68,10 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden relative z-50">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-300 hover:text-white cursor-pointer focus:outline-none transition-colors duration-300"
+              className="text-gray-100 hover:text-white p-2 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-gray-700 cursor-pointer focus:outline-none transition-colors duration-300"
             >
               {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
             </button>
@@ -91,9 +97,14 @@ const Header = () => {
               className={({ isActive }) =>
                 `relative text-lg font-medium transition-all duration-300 ${
                   isActive
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 after:bg-gradient-to-r after:from-cyan-400 after:to-purple-400 after:scale-100"
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400"
                     : "text-gray-400 hover:text-gray-200"
-                } after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-full after:scale-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-100`
+                } before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                before:bottom-[-4px] before:left-0 before:bg-gradient-to-r 
+                before:from-cyan-400 before:to-purple-400 before:scale-x-0 
+                before:origin-left hover:before:scale-x-100 before:transition-transform 
+                before:duration-300 before:ease-in-out
+                hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-400`
               }
             >
               {label}

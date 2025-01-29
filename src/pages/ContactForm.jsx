@@ -53,9 +53,9 @@ const ContactForm = () => {
           {/* Left side - Benefits */}
           <div className="space-y-8">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
+              {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
               <div className="relative">
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <h1 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                   Building the Future with Code
                 </h1>
                 <p className="mt-4 text-gray-300 text-lg">

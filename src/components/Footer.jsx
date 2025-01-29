@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="flex flex-col items-center space-y-10">
           {/* Logo Section */}
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-0 group-hover:opacity-50 transition duration-700"></div>
             <img
               onClick={() => navigate('/')}
               className="relative w-[125px] cursor-pointer object-cover  group-hover:border-gray-600 transition-all duration-300"
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex ">
+          <div className="flex gap-4">
             {links.map((link, index) => (
               <a
                 key={index}

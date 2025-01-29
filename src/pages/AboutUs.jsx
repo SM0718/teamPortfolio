@@ -11,8 +11,8 @@ const AboutUs = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <div className="relative inline-block">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
-              <h1 className="relative text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent">
+              {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
+              <h1 className="font-ulm relative py-3 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent">
                 Crafting Digital Excellence
               </h1>
             </div>
@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className="relative py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Our Mission
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
@@ -81,7 +81,7 @@ const AboutUs = () => {
             <div className="relative group">
               <div className="absolute -inset-px bg-gradient-to-r from-cyan-400 to-purple-400 rounded-xl blur opacity-25"></div>
               <div className="relative p-8 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700">
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                <h2 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   Why Choose Us?
                 </h2>
                 <p className="mt-4 text-lg text-gray-300">
@@ -107,7 +107,7 @@ const AboutUs = () => {
             <div className="relative group mt-12 lg:mt-0">
               <div className="absolute -inset-px bg-gradient-to-r from-cyan-400 to-purple-400 rounded-xl blur opacity-25"></div>
               <div className="relative p-8 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700">
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                <h2 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   Our Process
                 </h2>
                 <p className="mt-5 text-lg text-gray-300">

@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@font-face {
+    font-family: 'Ulm Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/regular.ttf') format('truetype');
+  }
+  
+  @theme {
+    --font-ulm: Ulm Grotesk, sans-serif;
+  }

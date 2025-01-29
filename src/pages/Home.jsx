@@ -3,31 +3,34 @@ import { ArrowRight, Code, Rocket, Palette, Megaphone } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 import TeamSection from '../components/TeamSection';
 import HireUsSection from '../components/HireUsSection';
+import { useNavigate } from 'react-router-dom';
 function Home() {
 
     const HeroSection = () => {
 
+        const navigate = useNavigate()
         const services = [
-            { icon: <Code className="w-6 h-6" />, text: 'Web Development' },
-            { icon: <Palette className="w-6 h-6" />, text: 'UI/UX Design' },
-            { icon: <Rocket className="w-6 h-6" />, text: 'Graphics Design' },
-            { icon: <Megaphone className="w-6 h-6" />, text: 'Digital Marketing' }
+            { icon: <Code className="w-6 h-6" />, text: 'Web Development', slug: '/services/0' },
+            { icon: <Palette className="w-6 h-6" />, text: 'UI/UX Design', slug: '/services/1' },
+            { icon: <Rocket className="w-6 h-6" />, text: 'Graphics Design', slug: '/services/2' },
+            { icon: <Megaphone className="w-6 h-6" />, text: 'Digital Marketing', slug: '/services/3' }
           ];
 
 
         return (
             <>
-            <section className="relative min-h-screen flex items-center justify-center text-center pt-20 overflow-hidden bg-gray-900">
+            <section className="relative min-h-screen flex items-center justify-center text-center pt-24 md:pt-20 overflow-hidden bg-gray-900">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-             style={{ backgroundImage: "url('./herobg.webp')" }}>
+            //  style={{ backgroundImage: "url('./herobg.webp')" }}
+             >
           <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-sm"></div>
         </div>
         
         {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/30 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/30 rounded-full filter blur-3xl animate-pulse delay-700"></div>
+        <div className="absolute top-1/4 left-1/4 w-[450px] h-[450px] bg-purple-500/30 rounded-full filter blur-[100px] animate-pulse delay-700"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-cyan-500/30 rounded-full filter blur-[100px] animate-pulse delay-1000"></div>
       </div>
 
       {/* Content */}
@@ -36,7 +39,7 @@ function Home() {
         <div className="relative">
           {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
           <div className="relative">
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
+            <h1 className="font-ulm text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
               We Create Experiences
             </h1>
           </div>
@@ -72,7 +75,7 @@ function Home() {
         </span>
         {/* Learn More text */}
         <span className="text-sm text-cyan-400 group-hover:text-white flex items-center space-x-1 transition-colors">
-          <span>Learn More</span>
+          <span onClick={() => navigate(service.slug)}>Learn More</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </span>
       </div>

@@ -10,7 +10,7 @@ const HireUsSection = () => {
           {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
           <div className="relative">
             {/* Main Heading */}
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent sm:text-5xl">
+            <h2 className="font-ulm text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent sm:text-5xl">
               Work with us
             </h2>
            

@@ -26,82 +26,82 @@ const PortfolioPage = () => {
       case 'Full Stack Web Developer':
         return [
           {
-            name: "E-Commerce Platform",
+            name: "Gaari Dekho",
             description: "Custom Shopify store with advanced features",
-            image: "/api/placeholder/400/300",
-            link: "https://project1.com"
+            image: "/./sagnik/sagnik1.webp",
+            link: "https://gaaridekho.netlify.app/"
           },
           {
-            name: "Social Media Dashboard",
+            name: "Earth Store",
             description: "MERN stack application with real-time updates",
-            image: "/api/placeholder/400/300",
-            link: "https://project2.com"
+            image: "/./sagnik/sagnik2.webp",
+            link: "https://earthstore.netlify.app/"
           },
           {
-            name: "Task Management System",
+            name: "Anon Store",
             description: "React & Node.js based project management tool",
-            image: "/api/placeholder/400/300",
-            link: "https://project3.com"
+            image: "/./sagnik/sagnik3.webp",
+            link: "https://anondemo.netlify.app/"
           },
           {
-            name: "Restaurant Ordering System",
+            name: "Aria Business Project",
             description: "Full-stack application with payment integration",
-            image: "/api/placeholder/400/300",
-            link: "https://project4.com"
+            image: "/./sagnik/sagnik4.webp",
+            link: "https://aria-project.netlify.app/"
           }
         ];
       case 'UI/UX Designer':
         return [
           {
-            name: "Finance App Design",
+            name: "Dhaba - Ciity",
             description: "Mobile banking application UI/UX",
-            image: "/api/placeholder/400/300",
-            link: "https://project1.com"
+            image: "/./sara/sara1.webp",
+            link: "https://www.behance.net/gallery/203127543/Dhaba-Ciity"
           },
           {
-            name: "E-learning Platform",
+            name: "Viva Decor",
             description: "Comprehensive website design for online education",
-            image: "/api/placeholder/400/300",
-            link: "https://project2.com"
+            image: "/./sara/sara2.webp",
+            link: "https://www.behance.net/gallery/202916751/Viva-Decor"
           },
           {
-            name: "Health & Fitness App",
+            name: "VeggieEats",
             description: "Mobile app design for workout tracking",
-            image: "/api/placeholder/400/300",
-            link: "https://project3.com"
+            image: "/./sara/sara3.webp",
+            link: "https://www.behance.net/gallery/185183811/VeggieEats"
           },
           {
-            name: "Travel Website Redesign",
+            name: "PawresQ - Pet Adoption App",
             description: "Modern UI refresh for travel platform",
-            image: "/api/placeholder/400/300",
-            link: "https://project4.com"
+            image: "/./sara/sara4.webp",
+            link: "https://www.behance.net/gallery/183141803/PawresQ-Pet-Adoption-App"
           }
         ];
       case 'Graphics Designer':
         return [
           {
-            name: "Tech Startup Branding",
+            name: "Flyer/Poster Design For CupCakes",
             description: "Complete brand identity package",
-            image: "/api/placeholder/400/300",
-            link: "https://project1.com"
+            image: "/./apu/apu1.webp",
+            link: "https://www.behance.net/gallery/195612903/FlyerPoster-Design-For-CupCakes"
           },
           {
-            name: "Restaurant Menu Design",
+            name: "Harmony Blends | Brand Design",
             description: "Print and digital menu designs",
-            image: "/api/placeholder/400/300",
-            link: "https://project2.com"
+            image: "/./apu/apu2.webp",
+            link: "https://www.behance.net/gallery/192674355/HARMONY-BLENDS-BRAND-DESIGN"
           },
           {
-            name: "Event Poster Series",
+            name: "Urban Boutique's Social Media Posts",
             description: "Marketing materials for music festival",
-            image: "/api/placeholder/400/300",
-            link: "https://project3.com"
+            image: "/./apu/apu3.webp",
+            link: "https://www.behance.net/gallery/190983079/URBAN-BOUTIQUES-SOCIAL-MEDIA-POSTS-CREATED"
           },
           {
-            name: "Corporate Identity Package",
+            name: "Step Into Your Style",
             description: "Logo and stationery design",
-            image: "/api/placeholder/400/300",
-            link: "https://project4.com"
+            image: "/./apu/apu4.webp",
+            link: "https://www.behance.net/gallery/189724341/SHOE-SOCIAL-MEDIA-AD-DESIGN"
           }
         ];
       default:
@@ -158,7 +158,7 @@ const PortfolioPage = () => {
                       <h3 className="font-ulm text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                         {item.name}
                       </h3>
-                      <p className="mt-1 text-sm text-gray-400">{item.description}</p>
+                      {/* <p className="mt-1 text-sm text-gray-400">{item.description}</p> */}
                     </div>
                     <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
                   </div>

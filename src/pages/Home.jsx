@@ -85,11 +85,11 @@ function Home() {
 
 
         {/* CTA Button */}
-        <button className="mt-8 px-8 py-4 text-lg font-medium rounded-xl 
+        <button className="mt-8 px-8 py-4 text-lg cursor-pointer font-medium rounded-xl 
                          bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900
                          hover:from-cyan-300 hover:to-purple-300 transition-all duration-300
                          flex items-center justify-center space-x-2 mx-auto group">
-          <span>Get Started</span>
+          <span onClick={() => navigate('/services')}>Get Started</span>
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>

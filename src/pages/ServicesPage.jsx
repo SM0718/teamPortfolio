@@ -177,7 +177,7 @@ const ServicesPage = () => {
               Let's discuss how we can help you achieve your goals with our expert services and dedicated team.
             </p>
             <button className="px-8 py-4 rounded-xl cursor-pointer bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 font-medium hover:from-cyan-300 hover:to-purple-300 transition-all flex items-center space-x-2 mx-auto">
-              <span onClick={() => navigate('/contact')}>Get Started</span>
+              <span onClick={() => navigate('/contact')}>Contact Us</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

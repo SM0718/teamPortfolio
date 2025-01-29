@@ -1,32 +1,62 @@
 import React from "react";
 import { Mail, Briefcase, MessageSquare, ArrowRight, Code, Zap } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handlePhoneChange = (e) => {
+    const { value } = e.target;
+    // Only allow numbers and limit to 10 digits
+    const phoneNumber = value.replace(/\D/g, '').slice(0, 10);
+    setFormData(prevState => ({
+      ...prevState,
+      phone: phoneNumber
+    }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        from_number: formData.phone,
+        message: formData.message,
+      };
+
+      const response = await emailjs.send(
+        'service_6z6ruj4',
+        'template_kenudi8',
+        templateParams,
+        'xrjf73ybj-9b-kFpp'
+      );
+
+      alert('Thank You For Contacting Us! We will get back to you soon');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      alert('Error sending email. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
-
-//   const sendEmail = async(form_data) => {
-
-//     await emailjs
-//       .send('service_kxvj3bw', 'template_nngxmc8', form_data, 'vbxUt_3cErW2Bt5GH')
-//       .then(
-//         (response) => {
-//           console.log('SUCCESS!', response);
-//           alert('Thank You For Contacting Us! We will get back to you soon');
-//           setLoading(false)
-//         },
-//         (error) => {
-//           console.log('FAILED...', error);
-//           alert('Error sending email');
-//         }
-//       );
-//   };
 
   const benefitCards = [
     {
@@ -53,7 +83,6 @@ const ContactForm = () => {
           {/* Left side - Benefits */}
           <div className="space-y-8">
             <div className="relative">
-              {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
               <div className="relative">
                 <h1 className="font-ulm text-3xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                   Building the Future with Code
@@ -94,13 +123,16 @@ const ContactForm = () => {
               <h2 className="text-2xl font-bold text-gray-100 mb-6">
                 Get in Touch
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 flex flex-col gap-3">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-1">
                     Name
                   </label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-700 text-gray-100 placeholder-gray-500
                              focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
@@ -114,6 +146,9 @@ const ContactForm = () => {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-700 text-gray-100 placeholder-gray-500
                              focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
@@ -123,9 +158,35 @@ const ContactForm = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-1">
+                    Phone Number
+                  </label>
+                  <div className="flex">
+                    <span className="inline-flex items-center px-4 py-3 rounded-l-lg border border-r-0 border-gray-700 bg-gray-900/50 text-gray-400">
+                      +91
+                    </span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handlePhoneChange}
+                      required
+                      pattern="[0-9]{10}"
+                      maxLength="10"
+                      className="w-full px-4 py-3 rounded-r-lg bg-gray-900/50 border border-gray-700 text-gray-100 placeholder-gray-500
+                               focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
+                      placeholder="10-digit mobile number"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-1">
                     Message
                   </label>
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                     rows="4"
                     className="w-full px-4 py-3 rounded-lg bg-gray-900/50 border border-gray-700 text-gray-100 placeholder-gray-500
@@ -137,7 +198,7 @@ const ContactForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 py-3 px-6 rounded-lg font-medium 
+                  className="w-full cursor-pointer bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 py-3 px-6 rounded-lg font-medium 
                            hover:from-cyan-300 hover:to-purple-300 transition-all duration-200 flex items-center justify-center space-x-2 
                            disabled:opacity-70 disabled:cursor-not-allowed"
                 >

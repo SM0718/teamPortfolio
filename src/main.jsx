@@ -6,12 +6,19 @@ import App from './App.jsx'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Home from './pages/Home.jsx'
-
+import AboutUs from './pages/AboutUs.jsx'
+import ContactForm from './pages/ContactForm.jsx'
+import ServicesPage from './pages/ServicesPage.jsx'
+import PortfolioPage from './pages/PortfolioPage.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path='/' element={<Home /> } />
+      <Route path='/about' element={<AboutUs /> } />
+      <Route path='/contact' element={<ContactForm /> } />
+      <Route path='/services' element={<ServicesPage /> } />
+      <Route path='/portfolio/:position' element={<PortfolioPage /> } />
     </Route>
   ))
 

@@ -102,7 +102,7 @@ const TeamSection = () => {
       linkedin: 'https://www.linkedin.com/in/sara-sharma-8b4436326/'
     },
     {
-      imgSrc: '/api/placeholder/400/320',
+      imgSrc: './apu.webp',
       name: 'Apu Sheikh',
       position: 'Graphics Designer',
       portfolioLink: 'https://portfolio3.com',
@@ -112,11 +112,11 @@ const TeamSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 pt-20">
+    <div className="min-h-screen bg-gray-900">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="text-center mb-12">
           <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
+            {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
             <div className="relative">
               <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Meet Our Team

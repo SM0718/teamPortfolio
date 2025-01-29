@@ -15,8 +15,8 @@ const Header = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
             <img
               onClick={() => navigate('/')}
-              className="relative h-12 w-12 rounded-full cursor-pointer object-cover border border-gray-700 group-hover:border-gray-600 transition-all duration-300"
-              src="https://avatar.iran.liara.run/public"
+              className="relative w-[125px] cursor-pointer object-cover  group-hover:border-gray-600 transition-all duration-300"
+              src="/./agriLogo.png"
               alt="Logo"
             />
           </div>

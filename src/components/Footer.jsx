@@ -24,17 +24,18 @@ const Footer = () => {
       <div className="relative mx-auto max-w-7xl py-12">
         <div className="flex flex-col items-center space-y-10">
           {/* Logo Section */}
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
-            <div className="relative">
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Agripad
-              </h2>
-            </div>
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+            <img
+              onClick={() => navigate('/')}
+              className="relative w-[125px] cursor-pointer object-cover  group-hover:border-gray-600 transition-all duration-300"
+              src="/./agriLogo.png"
+              alt="Logo"
+            />
           </div>
 
           {/* Navigation Links */}
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8 text-center">
+          <div className="flex ">
             {links.map((link, index) => (
               <a
                 key={index}
@@ -51,18 +52,18 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
             {/* Email Button */}
             <a
-              href="mailto:contact@company.com"
+              href="mailto:sagnikofficial734@gmail.com"
               className="relative group"
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
               <div className="relative flex items-center space-x-2 rounded-full bg-gray-900 px-6 py-3 text-sm text-white">
                 <Mail className="w-4 h-4" />
-                <span>contact@company.com</span>
+                <span>sagnikofficial734@gmail.com</span>
               </div>
             </a>
 
             {/* Social Links */}
-            <div className="flex items-center justify-center space-x-4">
+            {/* <div className="flex items-center justify-center space-x-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
@@ -72,7 +73,7 @@ const Footer = () => {
                   {social.icon}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Copyright */}

@@ -34,7 +34,7 @@ function Home() {
       <div className="relative z-10 max-w-4xl px-6 mx-auto">
         {/* Main Heading with Gradient */}
         <div className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
+          {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
           <div className="relative">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-6">
               We Create Experiences

@@ -3,11 +3,11 @@ import { ArrowRight } from 'lucide-react';
 
 const HireUsSection = () => {
   return (
-    <section className="bg-gray-900 py-32">
+    <section className="bg-gray-900 py-24">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         {/* Gradient container */}
         <div className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div>
+          {/* <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg blur opacity-25"></div> */}
           <div className="relative">
             {/* Main Heading */}
             <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent sm:text-5xl">

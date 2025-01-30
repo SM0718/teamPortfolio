@@ -20,33 +20,39 @@ const ServicesPage = () => {
     const navigate = useNavigate();
 
     const mainServices = [
-    {
-      icon: <Code className="w-8 h-8" />,
-      title: "Web Development",
-      description: "Custom web applications built with cutting-edge technologies",
-      features: [
-        "Full-stack Development",
-        "E-commerce Solutions",
-        "Progressive Web Apps",
-        "API Development"
-      ],
-      color: "from-blue-400 to-cyan-400",
-      slug: '/services/0'
-    },
-    {
-      icon: <Palette className="w-8 h-8" />,
-      title: "UI/UX Design",
-      description: "User-centered interfaces that are beautiful, intuitive, and loved by users.",
-      features: [
-        "User Interface Design",
-        "User Experience Design",
-        "Wireframing & Prototyping",
-        "Design Systems"
-      ],
-      color: "from-purple-400 to-pink-400",
-      slug: '/services/1'
-    },
-    {
+      {
+        icon: <Code className="w-8 h-8" />,
+        title: "Web Development",
+        description: "Custom web applications built with cutting-edge technologies",
+        features: [
+          "Full-stack Development",
+          "E-commerce Solutions",
+          "Progressive Web Apps",
+          "API Development",
+          "CMS Development",
+          "Performance Optimization",
+          "Custom Web Portals"
+        ],
+        color: "from-blue-400 to-cyan-400",
+        slug: '/services/0'
+      },
+      {
+        icon: <Palette className="w-8 h-8" />,
+        title: "UI/UX Design",
+        description: "User-centered interfaces that are beautiful, intuitive, and loved by users.",
+        features: [
+          "User Interface Design",
+          "User Experience Design",
+          "Wireframing & Prototyping",
+          "Design Systems",
+          "Usability Testing",
+          "Interaction Design",
+          "Mobile App UI/UX"
+        ],
+        color: "from-purple-400 to-pink-400",
+        slug: '/services/1'
+      },
+      {
         icon: <PenTool className="w-8 h-8" />,
         title: "Graphics Design",
         description: "Eye-catching visuals that tell your brand story.",
@@ -54,25 +60,32 @@ const ServicesPage = () => {
           "Brand Identity Design",
           "Social Media Graphics",
           "Marketing Materials",
-          "Print Design"
+          "Print Design",
+          "Illustrations & Vector Art",
+          "Packaging Design",
+          "Motion Graphics"
         ],
         color: "from-orange-400 to-red-400",
         slug: '/services/2'
       },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Digital Marketing",
-      description: "Strategic marketing to grow your online presence",
-      features: [
-        "SEO Optimization",
-        "Social Media Marketing",
-        "Content Strategy",
-        "Analytics & Reporting"
-      ],
-      color: "from-green-400 to-emerald-400",
-      slug: '/services/3'
-    }
+      {
+        icon: <Globe className="w-8 h-8" />,
+        title: "Digital Marketing",
+        description: "Strategic marketing to grow your online presence",
+        features: [
+          "SEO Optimization",
+          "Social Media Marketing",
+          "Content Strategy",
+          "Analytics & Reporting",
+          "Email Marketing",
+          "PPC Advertising",
+          "Brand Reputation Management"
+        ],
+        color: "from-green-400 to-emerald-400",
+        slug: '/services/3'
+      }
   ];
+  
 
   const additionalFeatures = [
     { icon: <Monitor />, text: "Responsive Design" },

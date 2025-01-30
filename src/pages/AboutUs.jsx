@@ -140,7 +140,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/10 to-purple-500/10"></div>
         <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8 relative">
           <div className="text-center">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent sm:text-4xl">
+            <h2 className="text-3xl py-2 font-bold bg-gradient-to-r from-cyan-300 via-white to-purple-300 bg-clip-text text-transparent sm:text-4xl">
               Ready to bring your vision to life?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">

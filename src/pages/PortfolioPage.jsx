@@ -38,6 +38,30 @@ const PortfolioPage = () => {
             link: "https://earthstore.netlify.app/"
           },
           {
+            name: "Dhaba - Ciity",
+            description: "Mobile banking application UI/UX",
+            image: "/./sara/sara1.webp",
+            link: "https://www.behance.net/gallery/203127543/Dhaba-Ciity"
+          },
+          {
+            name: "Viva Decor",
+            description: "Comprehensive website design for online education",
+            image: "/./sara/sara2.webp",
+            link: "https://www.behance.net/gallery/202916751/Viva-Decor"
+          },
+          {
+            name: "VeggieEats",
+            description: "Mobile app design for workout tracking",
+            image: "/./sara/sara3.webp",
+            link: "https://www.behance.net/gallery/185183811/VeggieEats"
+          },
+          {
+            name: "PawresQ - Pet Adoption App",
+            description: "Modern UI refresh for travel platform",
+            image: "/./sara/sara4.webp",
+            link: "https://www.behance.net/gallery/183141803/PawresQ-Pet-Adoption-App"
+          },
+          {
             name: "Anon Store",
             description: "React & Node.js based project management tool",
             image: "/./sagnik/sagnik3.webp",
@@ -75,6 +99,30 @@ const PortfolioPage = () => {
             description: "Modern UI refresh for travel platform",
             image: "/./sara/sara4.webp",
             link: "https://www.behance.net/gallery/183141803/PawresQ-Pet-Adoption-App"
+          },
+          {
+            name: "Gaari Dekho",
+            description: "Custom Shopify store with advanced features",
+            image: "/./sagnik/sagnik1.webp",
+            link: "https://gaaridekho.netlify.app/"
+          },
+          {
+            name: "Earth Store",
+            description: "MERN stack application with real-time updates",
+            image: "/./sagnik/sagnik2.webp",
+            link: "https://earthstore.netlify.app/"
+          },
+          {
+            name: "Anon Store",
+            description: "React & Node.js based project management tool",
+            image: "/./sagnik/sagnik3.webp",
+            link: "https://anondemo.netlify.app/"
+          },
+          {
+            name: "Aria Business Project",
+            description: "Full-stack application with payment integration",
+            image: "/./sagnik/sagnik4.webp",
+            link: "https://aria-project.netlify.app/"
           }
         ];
       case 'Graphics Designer':
@@ -86,10 +134,58 @@ const PortfolioPage = () => {
             link: "https://www.behance.net/gallery/195612903/FlyerPoster-Design-For-CupCakes"
           },
           {
+            name: "Dhaba - Ciity",
+            description: "Mobile banking application UI/UX",
+            image: "/./sara/sara1.webp",
+            link: "https://www.behance.net/gallery/203127543/Dhaba-Ciity"
+          },
+          {
+            name: "Viva Decor",
+            description: "Comprehensive website design for online education",
+            image: "/./sara/sara2.webp",
+            link: "https://www.behance.net/gallery/202916751/Viva-Decor"
+          },
+          {
+            name: "VeggieEats",
+            description: "Mobile app design for workout tracking",
+            image: "/./sara/sara3.webp",
+            link: "https://www.behance.net/gallery/185183811/VeggieEats"
+          },
+          {
+            name: "PawresQ - Pet Adoption App",
+            description: "Modern UI refresh for travel platform",
+            image: "/./sara/sara4.webp",
+            link: "https://www.behance.net/gallery/183141803/PawresQ-Pet-Adoption-App"
+          },
+          {
             name: "Harmony Blends | Brand Design",
             description: "Print and digital menu designs",
             image: "/./apu/apu2.webp",
             link: "https://www.behance.net/gallery/192674355/HARMONY-BLENDS-BRAND-DESIGN"
+          },
+          {
+            name: "Gaari Dekho",
+            description: "Custom Shopify store with advanced features",
+            image: "/./sagnik/sagnik1.webp",
+            link: "https://gaaridekho.netlify.app/"
+          },
+          {
+            name: "Earth Store",
+            description: "MERN stack application with real-time updates",
+            image: "/./sagnik/sagnik2.webp",
+            link: "https://earthstore.netlify.app/"
+          },
+          {
+            name: "Anon Store",
+            description: "React & Node.js based project management tool",
+            image: "/./sagnik/sagnik3.webp",
+            link: "https://anondemo.netlify.app/"
+          },
+          {
+            name: "Aria Business Project",
+            description: "Full-stack application with payment integration",
+            image: "/./sagnik/sagnik4.webp",
+            link: "https://aria-project.netlify.app/"
           },
           {
             name: "Urban Boutique's Social Media Posts",

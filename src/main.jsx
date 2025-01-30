@@ -11,6 +11,7 @@ import ContactForm from './pages/ContactForm.jsx'
 import ServicesPage from './pages/ServicesPage.jsx'
 import PortfolioPage from './pages/PortfolioPage.jsx'
 import ServiceDesc from './pages/ServiceDesc.jsx'
+import PricingSection from './pages/PricingSection.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path='/services' element={<ServicesPage /> } />
       <Route path='/portfolio/:position' element={<PortfolioPage /> } />
       <Route path='/services/:serviceId' element={<ServiceDesc /> } />
+      <Route path='/pricing' element={<PricingSection /> } />
     </Route>
   ))
 

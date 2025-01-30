@@ -59,7 +59,7 @@ const ServicesPage = () => {
           "Print Design"
         ],
         color: "from-orange-400 to-red-400",
-        slug: '/services/3'
+        slug: '/services/2'
       },
     // {
     //   icon: <Globe className="w-8 h-8" />,

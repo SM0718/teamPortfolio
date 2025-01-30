@@ -15,7 +15,7 @@ const PricingSection = () => {
         "Mobile Optimization",
         "Social Media Integration",
         "1 Rounds of Revisions",
-        "1 Month Free Support"
+        "14 Days Free Support"
       ],
       highlight: false
     },
@@ -33,7 +33,7 @@ const PricingSection = () => {
         "Database Integration",
         "Payment Gateway Setup",
         "Admin Dashboard",
-        "2 Months Free Support",
+        "30 Days Free Support",
         "Priority Support Response"
       ],
       highlight: true

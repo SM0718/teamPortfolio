@@ -98,14 +98,14 @@ const TeamSection = () => {
       linkedin: 'https://www.linkedin.com/in/sagnik-majumder-bbbb96200/',
       experience: [
         {
-          role: 'Full Stack Developer',
-          company: 'Tech Solutions Inc',
-          duration: '2022 - Present'
+          role: 'Senior Full Stack Developer',
+          company: 'Bonntonn',
+          duration: '2022 - 2024'
         },
         {
-          role: 'Frontend Developer',
-          company: 'Web Innovators',
-          duration: '2020 - 2022'
+          role: 'Full Stack Developer',
+          company: 'Digital Innovators',
+          duration: '2019 - 2022'
         }
       ]
     },
@@ -118,13 +118,13 @@ const TeamSection = () => {
       experience: [
         {
           role: 'Senior UI/UX Designer',
-          company: 'Digital Crafters',
-          duration: '2021 - Present'
+          company: 'Codiva Web Solutions',
+          duration: '2022 - 2025'
         },
         {
           role: 'UI Designer',
-          company: 'Creative Studio',
-          duration: '2019 - 2021'
+          company: 'Zivaka',
+          duration: '2021 - 2022'
         }
       ]
     },
@@ -137,8 +137,8 @@ const TeamSection = () => {
       experience: [
         {
           role: 'Senior Graphic Designer',
-          company: 'Design Masters',
-          duration: '2020 - Present'
+          company: 'Grey & White',
+          duration: '2020 - 2024'
         },
         {
           role: 'Graphic Designer',

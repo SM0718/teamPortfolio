@@ -16,10 +16,8 @@ import {
 } from 'lucide-react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
-
 const ServicesPage = () => {
-
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const mainServices = [
     {
@@ -61,18 +59,19 @@ const ServicesPage = () => {
         color: "from-orange-400 to-red-400",
         slug: '/services/2'
       },
-    // {
-    //   icon: <Globe className="w-8 h-8" />,
-    //   title: "Digital Marketing",
-    //   description: "Strategic marketing to grow your online presence",
-    //   features: [
-    //     "SEO Optimization",
-    //     "Social Media Marketing",
-    //     "Content Strategy",
-    //     "Analytics & Reporting"
-    //   ],
-    //   color: "from-green-400 to-emerald-400"
-    // }
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: "Digital Marketing",
+      description: "Strategic marketing to grow your online presence",
+      features: [
+        "SEO Optimization",
+        "Social Media Marketing",
+        "Content Strategy",
+        "Analytics & Reporting"
+      ],
+      color: "from-green-400 to-emerald-400",
+      slug: '/services/3'
+    }
   ];
 
   const additionalFeatures = [
@@ -105,11 +104,11 @@ const ServicesPage = () => {
 
       {/* Main Services */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {mainServices.map((service, index) => (
             <div key={index} className="relative group">
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${service.color} rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-300`}></div>
-              <div className="relative p-8 bg-gray-900 rounded-2xl">
+              <div className="relative p-8 bg-gray-900 rounded-2xl h-full">
                 <div className="flex flex-col h-full">
                   <div className={`p-3 rounded-xl bg-gradient-to-r ${service.color} w-fit`}>
                     {service.icon}
@@ -124,12 +123,10 @@ const ServicesPage = () => {
                       </li>
                     ))}
                   </ul>
-                  {/* <button > */}
-                    <NavLink to={service.slug} className="mt-auto px-6 py-3 cursor-pointer rounded-xl bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 font-medium flex items-center justify-center space-x-2 group/btn hover:from-cyan-300 hover:to-purple-300 transition-all">
-                        <span>See More</span>
-                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </NavLink>
-                  {/* </button> */}
+                  <NavLink to={service.slug} className="mt-auto px-6 py-3 cursor-pointer rounded-xl bg-gradient-to-r from-cyan-400 to-purple-400 text-gray-900 font-medium flex items-center justify-center space-x-2 group/btn hover:from-cyan-300 hover:to-purple-300 transition-all">
+                    <span>See More</span>
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </NavLink>
                 </div>
               </div>
             </div>

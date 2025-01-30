@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Twitter, Linkedin, Github, ArrowRight } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -8,6 +9,7 @@ const Footer = () => {
     { text: "About Us", href: "/about" },
     { text: "Contact Us", href: "/contact" },
     { text: "Services", href: "/services" },
+    { text: "Pricing", href: "/pricing" },
   ];
 
   const socialLinks = [
@@ -83,8 +85,8 @@ const Footer = () => {
                 © {year} Agripad. All rights reserved.
               </p>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-center">
-                <a href="#" className="text-xs text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" className="text-xs text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                <NavLink to={'/legal'} className="text-xs text-gray-400 hover:text-white transition-colors">Legal Page</NavLink>
+                
               </div>
             </div>
           </div>

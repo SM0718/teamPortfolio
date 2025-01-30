@@ -12,6 +12,7 @@ import ServicesPage from './pages/ServicesPage.jsx'
 import PortfolioPage from './pages/PortfolioPage.jsx'
 import ServiceDesc from './pages/ServiceDesc.jsx'
 import PricingSection from './pages/PricingSection.jsx'
+import LegalPages from './pages/LegalPages.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,9 +21,10 @@ const router = createBrowserRouter(
       <Route path='/about' element={<AboutUs /> } />
       <Route path='/contact' element={<ContactForm /> } />
       <Route path='/services' element={<ServicesPage /> } />
-      <Route path='/portfolio/:position' element={<PortfolioPage /> } />
+      <Route path='/portfolios' element={<PortfolioPage /> } />
       <Route path='/services/:serviceId' element={<ServiceDesc /> } />
       <Route path='/pricing' element={<PricingSection /> } />
+      <Route path='/legal' element={<LegalPages /> } />
     </Route>
   ))
 

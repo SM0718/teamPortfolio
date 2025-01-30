@@ -85,8 +85,8 @@ const HireUsSection = () => {
             <div
               className="relative inline-flex group items-center"
             >
-              <div className="absolute cursor-pointer -inset-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-300"></div>
-              <span onClick={() => navigate('/pricing')} className="relative inline-flex items-center px-8 py-3 rounded-full bg-gray-900 border border-gray-700 text-gray-100 font-medium transition-all duration-300 group-hover:border-gray-600">
+              <div className="absolute  -inset-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-300"></div>
+              <span onClick={() => navigate('/pricing')} className="relative cursor-pointer inline-flex items-center px-8 py-3 rounded-full bg-gray-900 border border-gray-700 text-gray-100 font-medium transition-all duration-300 group-hover:border-gray-600">
                 View Pricing
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </span>

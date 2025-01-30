@@ -78,7 +78,7 @@ const PricingSection = () => {
           <div className="mt-6 inline-flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full">
             <Info className="w-4 h-4 text-cyan-400" />
             <p className="text-sm text-gray-300">
-              Domain registration charges are additional if required
+              Domain registration and hosting charges are additional if required
             </p>
           </div>
         </div>

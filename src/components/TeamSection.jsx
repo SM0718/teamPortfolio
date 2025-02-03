@@ -47,7 +47,7 @@ const TeamCard = ({ imgSrc, name, position, github, linkedin, behance, experienc
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center space-x-4 pt-2 border-t border-gray-700">
+          {/* <div className="flex items-center space-x-4 pt-2 border-t border-gray-700">
             {isDesigner ? (
               behance && (
                 <a 
@@ -81,7 +81,7 @@ const TeamCard = ({ imgSrc, name, position, github, linkedin, behance, experienc
                 <Linkedin className="w-5 h-5" />
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -94,8 +94,8 @@ const TeamSection = () => {
       imgSrc: './sagnik.webp',
       name: 'Sagnik Majumder',
       position: 'Full Stack Web Developer',
-      github: 'https://github.com/SM0718',
-      linkedin: 'https://www.linkedin.com/in/sagnik-majumder-bbbb96200/',
+      // github: 'https://github.com/SM0718',
+      // linkedin: 'https://www.linkedin.com/in/sagnik-majumder-bbbb96200/',
       experience: [
         {
           role: 'Senior Full Stack Developer',
@@ -113,8 +113,8 @@ const TeamSection = () => {
       imgSrc: './sara.webp',
       name: 'Sara Sharma',
       position: 'UI/UX Designer',
-      behance: 'https://www.behance.net/sarasharma6',
-      linkedin: 'https://www.linkedin.com/in/sara-sharma-8b4436326/',
+      // behance: 'https://www.behance.net/sarasharma6',
+      // linkedin: 'https://www.linkedin.com/in/sara-sharma-8b4436326/',
       experience: [
         {
           role: 'Senior UI/UX Designer',
@@ -132,8 +132,8 @@ const TeamSection = () => {
       imgSrc: './apu.webp',
       name: 'Apu Sheikh',
       position: 'Graphics Designer',
-      behance: 'https://behance.net/apu',
-      linkedin: 'https://linkedin.com/in/apu',
+      // behance: 'https://behance.net/apu',
+      // linkedin: 'https://linkedin.com/in/apu',
       experience: [
         {
           role: 'Senior Graphic Designer',

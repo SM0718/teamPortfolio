@@ -143,7 +143,7 @@ const PortfolioPage = () => {
                             <h3 className="font-ulm text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                               {item.name}
                             </h3>
-                            <p className="mt-1 text-sm text-gray-400">{item.description}</p>
+                            {/* <p className="mt-1 text-sm text-gray-400">{item.description}</p> */}
                           </div>
                           <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
                         </div>

@@ -42,10 +42,10 @@ const ContactForm = () => {
       };
 
       const response = await emailjs.send(
-        'service_6z6ruj4',
-        'template_kenudi8',
+        'service_cpd8pwb',
+        'template_4ef5feh',
         templateParams,
-        'xrjf73ybj-9b-kFpp'
+        'cQqnwiFkUYfVtrF_USENS'
       );
 
       alert('Thank You For Contacting Us! We will get back to you soon');

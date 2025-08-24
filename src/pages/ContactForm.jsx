@@ -45,7 +45,7 @@ const ContactForm = () => {
         'service_cpd8pwb',
         'template_4ef5feh',
         templateParams,
-        'cQqnwiFkUYfVtrF_USENS'
+        'RnJHJCTQSx_H2ZURj'
       );
 
       alert('Thank You For Contacting Us! We will get back to you soon');

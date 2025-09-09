@@ -97,7 +97,7 @@ function Home() {
             
             <HireUsSection />
 
-{/*             <TeamSection /> */}
+            <TeamSection />
             </>
         );
       };
